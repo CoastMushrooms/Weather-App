@@ -4,6 +4,8 @@
   padding: 24px;
   font-family: system-ui, sans-serif;
   text-align: center;
+  background-color: #f0f9f0;
+  min-height: 100vh;
 }
 
 .search-bar {
@@ -16,7 +18,7 @@
 .search-bar input {
   padding: 10px 14px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #a8d5a8;
   border-radius: 8px;
   flex: 1;
   max-width: 300px;
@@ -27,17 +29,18 @@
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  background-color: #2b6cb0;
+  background-color: #e0559f;
   color: white;
   cursor: pointer;
 }
 
 .search-bar button:hover {
-  background-color: #244e85;
+  background-color: #c73f86;
 }
 
 .weather-card {
-  background: #eaf2fb;
+  background: #d9f0d9;
+  border: 2px solid #f4a6cf;
   border-radius: 16px;
   padding: 24px;
   max-width: 320px;
@@ -48,11 +51,12 @@
   font-size: 48px;
   font-weight: bold;
   margin: 8px 0;
+  color: #c73f86;
 }
 
 .weather-card .condition {
   text-transform: capitalize;
-  color: #555;
+  color: #4a7a4a;
 }
 
 .forecast {
@@ -62,24 +66,25 @@
   flex-wrap: wrap;
 }
 
-.forecast-day{
-  background: #f5f5f5;
+.forecast-day {
+  background: #f9e0ef;
   border-radius: 12px;
   padding: 12px;
   width: 90px;
 }
 
-@media (max-width: 500px){
+.app-footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #a8d5a8;
+  font-size: 13px;
+  color: #4a7a4a;
+}
+
+/* Responsive: stack the forecast on small screens */
+@media (max-width: 500px) {
   .forecast {
     flex-direction: column;
     align-items: center;
   }
-}
-
-.app-footer {
-  margin-top: 40px;
-  padding-top: 16px;
-  border-top: 1px solid #ddd;
-  font-size: 13px;
-  color: #777;
 }
