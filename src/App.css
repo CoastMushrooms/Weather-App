@@ -81,7 +81,6 @@
   color: #4a7a4a;
 }
 
-/* Responsive: stack the forecast on small screens */
 @media (max-width: 500px) {
   .forecast {
     flex-direction: column;
