@@ -20,20 +20,30 @@ Built by Urvi Akhouri
 
 1. Clone this repo:
 
-```git clone [your repo URL]
-cd WeatherApp```
+```
+git clone [your repo URL]
+cd WeatherApp
+```
 
 2. Install dependencies
 
-```npm install```
+```
+npm install
+```
 
 3. Create an `.env` file in the project with your own OpenWeather API key:
+
+```
+VITE_WEATHER_API_KEY=your_key_here
+```
 
 You can get a key by registering at https://openweathermap.org/api
 
 4. Start the dev server:
 
-```npm run dev```
+```
+npm run dev
+```
 
 5. Open http://localhost:5173 in your browser
 
